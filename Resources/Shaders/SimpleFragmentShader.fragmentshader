@@ -1,0 +1,11 @@
+#version 330 core
+
+/*
+NOTE: Depending on Anti-Aliasing (1x, 2x,.. etc.), will
+determine the # of fragment per pixel. (1:1 correspondance)
+*/
+
+out vec3 color;
+void main(){
+	color = vec3(1,0,0);
+}

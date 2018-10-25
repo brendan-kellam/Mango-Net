@@ -1,0 +1,24 @@
+// Tell the compiler that we shall use OpenGL 3's syntax
+#version 330 core
+
+// Declare the input data
+/*
+layout(location = 0) - Refers to the buffer we used to feed
+the vertexPosition_modelspace attribute. Each vertex can 
+have numerous attributes: A position, one or several 
+colours, one or several texture coordinates, lots of other 
+things.
+
+OpenGL doesn’t know what a colour is : it just sees a vec3.
+So we have to tell him which buffer corresponds to which 
+input. We do that by setting the layout to the same value 
+as the first parameter to glVertexAttribPointer.
+
+*/
+layout(location = 0) in vec3 vertexPosition_modelspace;
+
+uniform mat4 MVP;
+
+void main(){
+	gl_Position = MVP * vec4(vertexPosition_modelspace,1);
+}

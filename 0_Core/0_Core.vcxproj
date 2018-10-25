@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{4D872A44-11C4-4564-AD70-3033764DC95E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>My0_Core</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\0_Core\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\0_Core\</IntDir>
+    <IncludePath>$(SolutionDir)Deps\Include\;$(SolutionDir)0_Core\src\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Deps\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\0_Core\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\0_Core\</IntDir>
+    <IncludePath>$(SolutionDir)Deps\Include\;$(SolutionDir)0_Core\src\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Deps\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\0_Core\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\0_Core\</IntDir>
+    <IncludePath>$(SolutionDir)Deps\Include\;$(SolutionDir)0_Core\src\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Deps\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\0_Core\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\0_Core\</IntDir>
+    <IncludePath>$(SolutionDir)Deps\Include\;$(SolutionDir)0_Core\src\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Deps\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>MANGO_STATIC_BUILD;MANGO_STATIC_BUILDWIN32;_DEBUG;_WINDOWS;_USRDLL;MANGO_NONCLIENT_BUILD;MANGO_ASSERTIONS_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)Deps\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;glu32.lib;opengl32.lib;glfw3.lib;glfw3dll.lib;soil2-debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y "$(OutDir)$(ProjectName).lib" "$(SolutionDir)Deps\lib\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>MANGO_STATIC_BUILD;MANGO_STATIC_BUILD_DEBUG;_WINDOWS;_USRDLL;MANGO_NONCLIENT_BUILD;MANGO_ASSERTIONS_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)Deps\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;glu32.lib;opengl32.lib;glfw3.lib;glfw3dll.lib;soil2-debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y "$(OutDir)$(ProjectName).lib" "$(SolutionDir)Deps\lib\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>MANGO_STATIC_BUILD;MANGO_STATIC_BUILDMANGO_NONCLIENT_BUILD;MANGO_ASSERTIONS_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)Deps\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;glu32.lib;opengl32.lib;glfw3.lib;glfw3dll.lib;soil2-debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y "$(OutDir)$(ProjectName).lib" "$(SolutionDir)Deps\lib\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>MANGO_STATIC_BUILD;MANGO_STATIC_BUILDMANGO_NONCLIENT_BUILD;MANGO_ASSERTIONS_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)Deps\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;glu32.lib;opengl32.lib;glfw3.lib;glfw3dll.lib;soil2-debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y "$(OutDir)$(ProjectName).lib" "$(SolutionDir)Deps\lib\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Graphics\Rendering\Loader.cpp" />
+    <ClCompile Include="src\Graphics\Rendering\LoadShader.cpp" />
+    <ClCompile Include="src\Graphics\Rendering\ModelTexture.cpp" />
+    <ClCompile Include="src\Graphics\Rendering\RawModel.cpp" />
+    <ClCompile Include="src\Graphics\Rendering\Renderer.cpp" />
+    <ClCompile Include="src\Graphics\Rendering\ShaderProgram.cpp" />
+    <ClCompile Include="src\Graphics\Rendering\StaticShader.cpp" />
+    <ClCompile Include="src\Graphics\Window\WindowManager.cpp" />
+    <ClCompile Include="src\Net\Address.cpp" />
+    <ClCompile Include="src\Net\Connection.cpp" />
+    <ClCompile Include="src\Net\Message\MessageFactory.cpp" />
+    <ClCompile Include="src\Net\Packet\Packet.cpp" />
+    <ClCompile Include="src\Net\Socket.cpp" />
+    <ClCompile Include="src\Net\Stream\BitPacking\BitPacker.cpp" />
+    <ClCompile Include="src\Net\Stream\BitPacking\BitReader.cpp" />
+    <ClCompile Include="src\Net\Stream\BitPacking\BitWriter.cpp" />
+    <ClCompile Include="src\Net\Stream\ReadStream.cpp" />
+    <ClCompile Include="src\Net\Stream\WriteStream.cpp" />
+    <ClCompile Include="src\System\Debug\LogManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Graphics\Rendering\Loader.h" />
+    <ClInclude Include="src\Graphics\Rendering\LoadShader.h" />
+    <ClInclude Include="src\Graphics\Rendering\ModelTexture.h" />
+    <ClInclude Include="src\Graphics\Rendering\RawModel.h" />
+    <ClInclude Include="src\Graphics\Rendering\Renderer.h" />
+    <ClInclude Include="src\Graphics\Rendering\ShaderProgram.h" />
+    <ClInclude Include="src\Graphics\Rendering\StaticShader.h" />
+    <ClInclude Include="src\Graphics\Rendering\TexturedModel.h" />
+    <ClInclude Include="src\Graphics\Window\WindowManager.h" />
+    <ClInclude Include="src\Net\Address.h" />
+    <ClInclude Include="src\Net\Message\SimpleMessage\SimpleMessage.h" />
+    <ClInclude Include="src\Net\Message\SimpleMessage\SimpleMessageFactory.h" />
+    <ClInclude Include="src\Platform.h" />
+    <ClInclude Include="src\System\Entity\Camera.h" />
+    <ClInclude Include="src\System\Entity\Entity.h" />
+    <ClInclude Include="src\Util\Comparators.h" />
+    <ClInclude Include="src\Net\Connection.h" />
+    <ClInclude Include="src\Net\Message\Message.h" />
+    <ClInclude Include="src\Net\Message\MessageFactory.h" />
+    <ClInclude Include="src\Net\Packet\Packet.h" />
+    <ClInclude Include="src\Net\Socket.h" />
+    <ClInclude Include="src\Net\Stream\BitPacking\BitPacker.h" />
+    <ClInclude Include="src\Net\Stream\BitPacking\BitReader.h" />
+    <ClInclude Include="src\Net\Stream\BitPacking\BitWriter.h" />
+    <ClInclude Include="src\Net\Stream\ReadStream.h" />
+    <ClInclude Include="src\Net\Stream\Stream.h" />
+    <ClInclude Include="src\Net\Stream\WriteStream.h" />
+    <ClInclude Include="src\System\Debug\LogManager.h" />
+    <ClInclude Include="src\Util\Interfaces\Manager.h" />
+    <ClInclude Include="src\Util\Interfaces\NonCopyable.h" />
+    <ClInclude Include="src\Net\Stream\Serializable.h" />
+    <ClInclude Include="src\Util\Interfaces\Updatable.h" />
+    <ClInclude Include="src\Util\Math.h" />
+    <ClInclude Include="src\Util\Singleton.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
